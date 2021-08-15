@@ -13,7 +13,8 @@ cookies = Table('cookies', metadata,
                 Column('cookie_recipe_url', String(255)),
                 Column('cookie_sku', String(55)),
                 Column('quantity', Integer()),
-                Column('unit_cost', Numeric(12, 2))
+                Column('unit_cost', Numeric(12, 2)),
+                CheckConstraint('quantity >=0', name='quantity_positive')
                 )
 
 users = Table('users', metadata,
