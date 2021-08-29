@@ -66,8 +66,8 @@ class DataAccessLayer:
 
 
 dal = DataAccessLayer()
-
-
+'''
+#not necessary with mock
 # insert data
 def prep_db():
     ins = dal.cookies.insert()
@@ -155,3 +155,4 @@ def prep_db():
         },
     ]
     dal.connection.execute(ins, order_items)
+'''
