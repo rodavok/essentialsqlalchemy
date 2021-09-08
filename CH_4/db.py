@@ -6,7 +6,7 @@ from sqlalchemy import (MetaData, Table, Column, Integer, Numeric, String,
 class DataAccessLayer:
     """
     Creating a class affects how the database is tested
-    Allows for the database to be initialized and makes it easier to connect to the database
+    Allows for the database to be initialized and makes it easier to connect to the it
     """
 
     connection = None
